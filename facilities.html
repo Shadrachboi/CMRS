@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Minds Royal School | Facilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #050505;
+            color: #e5e5e5;
+            cursor: default;
+        }
+
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-red-900/50 selection:text-white">
+    <div class="grain-overlay"></div>
+
+    <nav class="fixed top-4 left-0 right-0 z-50 flex justify-center px-3 sm:px-4">
+        <div class="relative w-full md:w-auto backdrop-blur-xl bg-black/70 border border-white/15 md:border-white/10 rounded-2xl md:rounded-full px-4 py-3 md:px-6 md:py-4 flex items-center justify-between gap-3 md:gap-12 shadow-2xl shadow-black/50 transition-all duration-300 hover:border-white/20">
+            <a href="index.html" class="text-lg font-bold tracking-tighter uppercase text-white flex items-center gap-1">
+                C.M.R.S<span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-xs font-medium uppercase tracking-widest text-neutral-400">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="facilities.html" class="text-white transition-colors">Facilities</a>
+                <a href="gallery.html" class="hover:text-white transition-colors">Gallery</a>
+                <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <button type="button" class="admission-trigger hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-white text-black hover:bg-neutral-200 transition-transform hover:scale-110" aria-label="Open admission form">
+                <span class="iconify" data-icon="lucide:arrow-up-right" data-width="16"></span>
+            </button>
+
+            <button id="mobileMenuButton" type="button" class="md:hidden flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white shadow-lg shadow-black/20" aria-label="Toggle menu" aria-expanded="false">
+                <span class="iconify" data-icon="lucide:menu" data-width="20"></span>
+            </button>
+
+            <div id="mobileMenu" class="hidden md:hidden absolute left-0 right-0 top-full mt-3 rounded-2xl border border-white/10 bg-black/90 p-4 shadow-2xl shadow-black/50 backdrop-blur-xl">
+                <div class="flex flex-col gap-3 text-sm font-medium uppercase tracking-[0.2em] text-neutral-300">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-white transition-colors">About</a>
+                    <a href="facilities.html" class="hover:text-white transition-colors">Facilities</a>
+                    <a href="gallery.html" class="hover:text-white transition-colors">Gallery</a>
+                    <a href="index.html#contact" class="hover:text-white transition-colors">Contact</a>
+                    <button type="button" class="admission-trigger mt-2 inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-xs font-semibold tracking-[0.2em] text-black">Join Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-28 pb-20">
+        <section class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 fade-up">
+                <span class="text-red-500 font-mono text-xs uppercase tracking-widest mb-3 block">04 / Facilities</span>
+                <h1 class="text-4xl md:text-6xl font-semibold tracking-tighter text-white mb-4">Our School Facilities</h1>
+                <p class="max-w-2xl text-neutral-400 leading-relaxed">A vibrant campus designed to inspire learning, creativity, and confidence in every student.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <article class="group relative min-h-[480px] overflow-hidden rounded-sm border border-white/10 bg-white/[0.02] fade-up">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('img/basketballcourt.png');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 text-[10px] uppercase tracking-[0.2em] border border-white/20 bg-black/20 backdrop-blur-sm text-white">01</span>
+                            <span class="iconify text-white" data-icon="lucide:arrow-up-right" data-width="18"></span>
+                        </div>
+                        <h2 class="text-3xl font-semibold text-white mb-3">Basketball Court</h2>
+                        <p class="text-sm text-neutral-200 leading-relaxed max-w-xs">A spacious court for active play, fitness, and team spirit, encouraging physical wellness and healthy competition.</p>
+                    </div>
+                </article>
+
+                <article class="group relative min-h-[480px] overflow-hidden rounded-sm border border-white/10 bg-white/[0.02] fade-up" style="transition-delay: 0.1s;">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('img/library.png');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 text-[10px] uppercase tracking-[0.2em] border border-white/20 bg-black/20 backdrop-blur-sm text-white">02</span>
+                            <span class="iconify text-white" data-icon="lucide:arrow-up-right" data-width="18"></span>
+                        </div>
+                        <h2 class="text-3xl font-semibold text-white mb-3">Library</h2>
+                        <p class="text-sm text-neutral-200 leading-relaxed max-w-xs">A quiet, inspiring reading space that encourages curiosity, concentration, and a lifelong love of learning.</p>
+                    </div>
+                </article>
+
+                <article class="group relative min-h-[480px] overflow-hidden rounded-sm border border-white/10 bg-white/[0.02] fade-up" style="transition-delay: 0.2s;">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('img/computerroom.png');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 text-[10px] uppercase tracking-[0.2em] border border-white/20 bg-black/20 backdrop-blur-sm text-white">03</span>
+                            <span class="iconify text-white" data-icon="lucide:arrow-up-right" data-width="18"></span>
+                        </div>
+                        <h2 class="text-3xl font-semibold text-white mb-3">Computer Room</h2>
+                        <p class="text-sm text-neutral-200 leading-relaxed max-w-xs">Fully equipped to develop digital literacy, coding confidence, and modern problem-solving skills for everyday life.</p>
+                    </div>
+                </article>
+
+                <article class="group relative min-h-[480px] overflow-hidden rounded-sm border border-white/10 bg-white/[0.02] fade-up" style="transition-delay: 0.3s;">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('img/field.png');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/20"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 text-[10px] uppercase tracking-[0.2em] border border-white/20 bg-black/20 backdrop-blur-sm text-white">04</span>
+                            <span class="iconify text-white" data-icon="lucide:arrow-up-right" data-width="18"></span>
+                        </div>
+                        <h2 class="text-3xl font-semibold text-white mb-3">School Field</h2>
+                        <p class="text-sm text-neutral-200 leading-relaxed max-w-xs">An open outdoor space for active recreation, sports, events, and team-building activities that promote wellbeing.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <a href="index.html" class="text-xl font-bold tracking-tighter uppercase text-white flex items-center gap-1">
+                Creative Minds Royal School<span class="text-red-600">.</span>
+            </a>
+            <p class="text-neutral-600 text-xs">© 2026 Creative Minds Royal School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="admissionModal" class="fixed inset-0 z-[70] hidden items-center justify-center bg-black/80 backdrop-blur-sm px-4">
+        <div class="relative w-full max-w-2xl rounded-sm border border-white/10 bg-[#111111] p-6 md:p-8 shadow-2xl shadow-black/50">
+            <button type="button" class="close-admission absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-white/30 hover:bg-white/10" aria-label="Close admission form">
+                <span class="iconify" data-icon="lucide:x" data-width="18"></span>
+            </button>
+
+            <div class="mb-8">
+                <span class="text-red-500 font-mono text-xs uppercase tracking-widest mb-2 block">Admission Form</span>
+                <h3 class="text-3xl font-semibold tracking-tighter text-white">Apply for a place</h3>
+            </div>
+
+            <form id="admissionForm" class="space-y-6">
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="group relative">
+                        <label for="surname" class="mb-2 block text-xs uppercase tracking-[0.2em] text-neutral-400">Surname</label>
+                        <input type="text" id="surname" name="surname" required class="w-full rounded-sm border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-red-500 focus:outline-none" placeholder="Surname">
+                    </div>
+                    <div class="group relative">
+                        <label for="firstname" class="mb-2 block text-xs uppercase tracking-[0.2em] text-neutral-400">First name</label>
+                        <input type="text" id="firstname" name="firstname" required class="w-full rounded-sm border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-red-500 focus:outline-none" placeholder="First name">
+                    </div>
+                    <div class="group relative">
+                        <label for="lastname" class="mb-2 block text-xs uppercase tracking-[0.2em] text-neutral-400">Last name</label>
+                        <input type="text" id="lastname" name="lastname" required class="w-full rounded-sm border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-red-500 focus:outline-none" placeholder="Last name">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="program" class="mb-2 block text-xs uppercase tracking-[0.2em] text-neutral-400">School level</label>
+                        <div class="relative">
+                            <select id="program" name="program" required class="w-full appearance-none rounded-sm border border-white/10 bg-white/5 px-4 py-3 pr-10 text-white focus:border-red-500 focus:outline-none" style="-webkit-appearance: none; appearance: none;">
+                                <option value="" class="bg-[#111111] text-neutral-300">Select a program</option>
+                                <option value="Nursery" class="bg-[#111111] text-white">Nursery</option>
+                                <option value="Primary" class="bg-[#111111] text-white">Primary</option>
+                                <option value="High School" class="bg-[#111111] text-white">High School</option>
+                            </select>
+                            <span class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-neutral-300">
+                                <span class="iconify" data-icon="lucide:chevron-down" data-width="18"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="phone" class="mb-2 block text-xs uppercase tracking-[0.2em] text-neutral-400">Phone number</label>
+                        <input type="tel" id="phone" name="phone" required class="w-full rounded-sm border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-red-500 focus:outline-none" placeholder="Phone number">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="additionalNote" class="mb-2 block text-xs uppercase tracking-[0.2em] text-neutral-400">Additional note</label>
+                    <textarea id="additionalNote" name="additionalNote" rows="5" class="w-full rounded-sm border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-neutral-500 focus:border-red-500 focus:outline-none" placeholder="Tell us more about your child and the program you are interested in..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-white py-4 text-sm font-semibold uppercase tracking-[0.2em] text-black transition hover:bg-neutral-200">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { root: null, rootMargin: '0px', threshold: 0.1 });
+
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuLinks = document.querySelectorAll('#mobileMenu a, #mobileMenu button');
+
+            const setMenuIcon = (isOpen) => {
+                mobileMenuButton.innerHTML = isOpen
+                    ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>'
+                    : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="7" y2="7"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="17" y2="17"></line></svg>';
+            };
+
+            const toggleMobileMenu = () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+                setMenuIcon(isOpen);
+            };
+
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 768) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
+                        setMenuIcon(false);
+                    }
+                });
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    setMenuIcon(false);
+                }
+            });
+
+            const modal = document.getElementById('admissionModal');
+            const triggerButtons = document.querySelectorAll('.admission-trigger');
+            const closeButton = document.querySelector('.close-admission');
+            const form = document.getElementById('admissionForm');
+
+            const openModal = () => {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+            };
+
+            const closeModal = () => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            triggerButtons.forEach(button => {
+                button.addEventListener('click', openModal);
+            });
+
+            closeButton.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                alert('Your admission request has been received. Our team will contact you shortly.');
+                form.reset();
+                closeModal();
+            });
+        });
+    </script>
+</body>
+</html>
